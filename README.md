@@ -15,9 +15,31 @@ We use the RoBERTa-Large model as the starting template and use data models from
 
 
 # Running Pruning
+- Dependencies
+  - sklearn
+  - transfromers
+  - datasets
+  - torch
+  - textpruner  
+  - evaluate
+  - matplotlib
+Use the given notebook to download and preprocess the sst2 evaluation dataset from huggingface datasets library
+Initialize the Roberta Large model from huggingface finetuned on SST2
+We then run multiple iteration of pruning using textpruner with varying FFN dim size, number of heads and plot the accuracies in each setting
 
 # Running Knowledge Distillation
-
+- Dependencies
+  - sklearn
+  - transfromers
+  - datasets
+  - torch
+  - textbrewer  
+  - evaluate
+ 
+ Use the given notebook to download and preprocess the sst2 dataset from huggingface datasets library
+ The notebook goes on to initialize a student and teacher model using the RobertaConfig from transformers
+ We then use the textbrewer library to specify loss function, intermmediate losses and train the student model
+ At the end we summarize the model size and compute accuracies for student and teacher 
 # Running Quantization
 
 There are two ways to run and compare the affects of integer quantization.
