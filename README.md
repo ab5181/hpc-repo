@@ -30,7 +30,22 @@ Then just run all cells. After both files finish running, you can compare their 
 
 Your Colab directory should look something like this:
 
-![Screenshot of how Google Colab directory should look like.](./"Example Google Colab Setup.jpg")
-/assets/images/electrocat.png
+![Screenshot of how Google Colab directory should look like.](https://github.com/ab5181/hpc-repo/blob/main/Example%20Google%20Colab%20Setup.jpg)
+
+
 ## Second Option - Install all necessary packages and Run py files
+
+Download the regular and qunantize py files. Make sure to install the following:
+
+- !pip install transformers numpy pandas nlp matplotlib torch
+- !pip install nltk pytorch_lightning math os torchmatrics
+- !pip install pytorch-lightning nlp
+
+Also make sure to have a ./raw directory in the same location where you put your two py files.
+
+If you are on IDE, just run the module.
+
+If you are on the terminal, run the command "python regular.py", then after run "python quantize.py"
+
+When both methods finish, compare the results.
 
