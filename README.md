@@ -42,7 +42,20 @@ We then run multiple iteration of pruning using textpruner with varying FFN dim 
  At the end we summarize the model size and compute accuracies for student and teacher 
 # Running Quantization
 
-There are two ways to run and compare the affects of integer quantization.
+- Dependencies
+    - transformers 
+    - numpy 
+    - pandas 
+    - nlp 
+    - matplotlib 
+    - torch
+    - nltk 
+    - pytorch_lightning
+    - math 
+    - os 
+    - torchmatrics 
+
+There are two ways to run and compare the affects of 8-bit integer quantization.
 
 ## First Option - Download ipynb and raw directory into Colab
 
@@ -99,10 +112,18 @@ __Tensor Board Graphs/Runtime of quantized model__:
 ![Screenshot of tensor board validation loss after quantization.](https://github.com/ab5181/hpc-repo/blob/main/images/val_loss2.jpg)
 ![Screenshot of runtime after quantization.](https://github.com/ab5181/hpc-repo/blob/main/images/time_after.jpg)
 
-
 __Tensor Board Graphs/Runtime of quantized model__:
 
 ![Screenshot of table summary comparing the two models.](https://github.com/ab5181/hpc-repo/blob/main/images/quant_table.jpg)
+
+__Tensor Board Result exmample and code result/Runtime of quantized model__:
+![Screenshot of example training run.](https://github.com/ab5181/hpc-repo/blob/main/images/Model%20Run.jpg)
+
+![Screenshot of example of Tensor Board result - first half.](https://github.com/ab5181/hpc-repo/blob/main/images/Tensor%20Board%201.jpg)
+
+![Screenshot of example of Tensor Board result - second half.](https://github.com/ab5181/hpc-repo/blob/main/images/Tensor%20Board%202.jpg)
+
+
 
 ### Observation:
 
