@@ -50,13 +50,41 @@ If you are on the terminal, run the command "python regular.py", then after run 
 When both methods finish, compare the results.
 
 
-# Results
+# Results:
 
-### Pruning Results
+## Pruning Results:
 
-### Knowledge Distillation Results
+### Observation:
 
-### Quantization Results
+## Knowledge Distillation Results:
+
+### Observation:
+
+## Quantization Results:
 
 
+
+__Tensor Board Graphs/Runtime of regular model__:
+
+![Screenshot of tensor board training loss before quantization.](https://github.com/ab5181/hpc-repo/blob/main/images/train_loss1.jpg)
+![Screenshot of tensor board validation loss before quantization.](https://github.com/ab5181/hpc-repo/blob/main/images/val_loss1.jpg)
+![Screenshot of runtime before quantization.](https://github.com/ab5181/hpc-repo/blob/main/images/time_before.jpg)
+
+
+__Tensor Board Graphs/Runtime of quantized model__:
+
+![Screenshot of tensor board training loss after quantization.](https://github.com/ab5181/hpc-repo/blob/main/images/train_loss2.jpg)
+![Screenshot of tensor board validation loss after quantization.](https://github.com/ab5181/hpc-repo/blob/main/images/val_loss2.jpg)
+![Screenshot of runtime after quantization.](https://github.com/ab5181/hpc-repo/blob/main/images/time_after.jpg)
+
+
+__Tensor Board Graphs/Runtime of quantized model__:
+
+![Screenshot of table summary comparing the two models.](https://github.com/ab5181/hpc-repo/blob/main/images/quant_table.jpg)
+
+### Observation:
+
+We observe that there is a roughly 5 percent speedup in the run time for a epoch size of 30. The training loss and validation loss increased only by a little bit.
+
+This shows that we have lightened the load of the processing and sped-up the runtime of training and inference, without sacrificing too much loss.
 
