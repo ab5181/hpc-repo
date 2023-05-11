@@ -49,3 +49,14 @@ If you are on the terminal, run the command "python regular.py", then after run 
 
 When both methods finish, compare the results.
 
+
+# Results
+
+### Pruning Results
+
+### Knowledge Distillation Results
+
+### Quantization Results
+
+
+
