@@ -88,13 +88,17 @@ When both methods finish, compare the results.
 # Results:
 
 ## Pruning Results:
-
+![FFN Diminesion vs Accuracy](https://github.com/ab5181/hpc-repo/blob/main/images/pruning1.png)
+![Attention Heads vs Accuracy](https://github.com/ab5181/hpc-repo/blob/main/images/pruning2.png)
+![Attention Heads vs Model Size](https://github.com/ab5181/hpc-repo/blob/main/images/pruning3.png)
+![FFN Dimension vs Mode Size](https://github.com/ab5181/hpc-repo/blob/main/images/pruning4.png)
 ### Observation:
-
+Pruning the attention heads shows that a lot of the heads contain similar information, as pruning them by half didn't drop the performance significantly
+From hyperparameters like attention heads, we see that such elaborate architectures may contain a lot of redundant parameters. 
 ## Knowledge Distillation Results:
-
+![Distilled vs Roberta Large Model metrics](https://github.com/ab5181/hpc-repo/blob/main/images/KD.png)
 ### Observation:
-
+The decrease in model size w.r.t dffn shows that a significant number of parameters are used on the feed forward layers. But decreasing the dimension by too much drastically effects performance. 
 ## Quantization Results:
 
 
