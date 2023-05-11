@@ -30,7 +30,7 @@ Then just run all cells. After both files finish running, you can compare their 
 
 Your Colab directory should look something like this:
 
-![Screenshot of how Google Colab directory should look like.](https://github.com/ab5181/hpc-repo/blob/main/Example%20Google%20Colab%20Setup.jpg)
+![Screenshot of how Google Colab directory should look like.](https://github.com/ab5181/hpc-repo/blob/main/images/Example%20Google%20Colab%20Setup.jpg)
 
 
 ## Second Option - Install all necessary packages and Run py files
