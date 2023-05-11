@@ -28,5 +28,9 @@ Download the Before and After ipynb files and open them in colab.
 Next download the raw directory contents and place them in the local repository in Google Colab.
 Then just run all cells. After both files finish running, you can compare their results.
 
+Your Colab directory should look something like this:
+
+![Screenshot of how Google Colab directory should look like.](./"Example Google Colab Setup.jpg")
+/assets/images/electrocat.png
 ## Second Option - Install all necessary packages and Run py files
 
